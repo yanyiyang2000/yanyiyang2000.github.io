@@ -15,13 +15,22 @@ N_{\rm v} = 2 \left( \frac{2 \pi m_{\rm p}^* k T}{h^2} \right)^{\frac{3}{2}}
 $$
 
 Where
-- $N_{\rm c} is the effective density of states of conduction band$, $\rm cm^{-3}$
-- $N_{\rm v} is the effective density of states of valence band$, $\rm cm^{-3}$
+- $N_{\rm c}$ is the effective density of states of conduction band$, $\rm cm^{-3}$
+- $N_{\rm v}$ is the effective density of states of valence band$, $\rm cm^{-3}$
 - $m_{\rm n}^*$ is the effective mass of electrons
 - $m_{\rm p}^*$ is the effective mass of holes
 - $k$ is the Boltzmann constant, $8.63 \times 10^{-5}\ \rm eV/K$
+- $T$ is the temperature, $\rm K$
 - $h$ is the Plank constant, $4.14 \times 10^{-15}\ \rm eV \cdot s$
-- $T$ is the temperature, $K$
+
+## Intrinsic Carrier Concentration $n_{\rm i}$
+
+$$
+n_{\rm i} = \sqrt{N_{\rm c} N_{\rm v}} e^{-\frac{E_{\rm g}}{2 k T}}
+$$
+
+Where
+- $E_{\rm g}$ is the band gap energy, $\rm eV$
 
 ## Carrier Concentration $n$ and $p$
 
@@ -46,16 +55,7 @@ $$
 E_{\rm i} = \frac{1}{2} (E_{\rm c} + E_{\rm v}) + \frac{3}{4} k T \ln \left( \frac{m_{\rm p}^*}{m_{\rm n}^*} \right)
 $$
 
-## Intrinsic Carrier Concentration $n_{\rm i}$
-
-$$
-n_{\rm i} = \sqrt{N_{\rm c} N_{\rm v}} e^{-\frac{E_{\rm g}}{2 k T}}
-$$
-
-Where
-- $E_{\rm g}$ is the band gap energy, $\rm eV$
-
-## Fermi Level of Extrinsic Semiconductors
+## Fermi Level of Extrinsic Semiconductors $E_{\rm F}$
 
 For n-type semiconductor
 
@@ -64,7 +64,7 @@ E_{\rm F} - E_{\rm i} = k T \ln \left( \frac{n}{n_{\rm i}} \right) \approx k T \
 $$
 
 $$
-E_{\rm F} - E_{\rm c} = k T k T \ln \left( \frac{N_{\rm D}}{N_{\rm c}} \right)
+E_{\rm F} - E_{\rm c} = k T \ln \left( \frac{N_{\rm D}}{N_{\rm c}} \right)
 $$
 
 For p-type semiconductor
@@ -74,7 +74,7 @@ E_{\rm i} - E_{\rm F} = k T \ln \left( \frac{p}{n_{\rm i}} \right) \approx k T \
 $$
 
 $$
-E_{\rm v} - E_{\rm F} = k T k T \ln \left( \frac{N_{\rm A}}{N_{\rm v}} \right)
+E_{\rm v} - E_{\rm F} = k T \ln \left( \frac{N_{\rm A}}{N_{\rm v}} \right)
 $$
 
 Where
