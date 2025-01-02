@@ -15,8 +15,8 @@ N_{\rm v} = 2 \left( \frac{2 \pi m_{\rm p}^* k T}{h^2} \right)^{\frac{3}{2}}
 $$
 
 Where
-- $N_{\rm c}$ is the effective density of states of conduction band$, $\rm cm^{-3}$
-- $N_{\rm v}$ is the effective density of states of valence band$, $\rm cm^{-3}$
+- $N_{\rm c}$ is the effective density of states of conduction band, $\rm cm^{-3}$
+- $N_{\rm v}$ is the effective density of states of valence band, $\rm cm^{-3}$
 - $m_{\rm n}^*$ is the effective mass of electrons
 - $m_{\rm p}^*$ is the effective mass of holes
 - $k$ is the Boltzmann constant, $8.63 \times 10^{-5}\ \rm eV/K$
