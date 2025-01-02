@@ -20,12 +20,12 @@ Consider the following extreme case for collision:
 - **A** transmits at time $T$ and it takes $t$ to reach **B**.
 - **B** transmits right before $T + t$ and it also takes $t$ to reach **A**. 
 
-Hence, **A** will not sense the collision after $T + 2t$. 
+Hence, **A** will not sense the collision until after $T + 2t$. 
 
 In Pure ALOHA, the probability of having a successful transmission is equivalent to the probability of having exactly $1$ transmission during the $2t$ interval.
 
-Suppose there are $G$ transmissions on average during time interval $t$ and this follows the Poisson distribution, then
-- There are $2G$ additional transmissions on average during any $2t$ time interval.
+Suppose there are $G$ transmissions on average during time interval $t$ and they follow the Poisson distribution, then
+- There are $2G$ transmissions on average during any $2t$ time interval.
 - The probability of having $k$ transmissions during any $2t$ time interval is $P(x = k) = \frac{2G^k e^{-2G}}{k!}$
 
 Hence, the probability of having a successful transmission is
@@ -46,7 +46,7 @@ and $\eta_{\rm max} = 18.4 \%$ when $G = 0.5$
 
 ## Time Slotted ALOHA
 
-In Time Slotted ALOHA, transmissions can only happen during the start of each time slot. This elminates the extreme case mentioned in Pure ALOHA.
+In Time Slotted ALOHA, transmissions can only happen during the start of each time slot. This eliminates the extreme case mentioned in Pure ALOHA.
 
 In Time Slotted ALOHA, the probability of having a successful transmission is equivalent to the probability of having exactly $1$ transmission during the $t$ interval.
 
