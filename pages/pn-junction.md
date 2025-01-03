@@ -122,8 +122,8 @@ Where
 $$
 \begin{equation*}
     \begin{split}
-        x_{\rm n} &= \sqrt{ \frac{2 \epsilon_{\rm si} \cdot V_0}{q (N_{\rm A} + N_{\rm D})} \left( \frac{N_{\rm A}}{N_{\rm D}} \right) } \\[2ex]
-        x_{\rm p} &= \sqrt{ \frac{2 \epsilon_{\rm si} \cdot V_0}{q (N_{\rm A} + N_{\rm D})} \left( \frac{N_{\rm D}}{N_{\rm A}} \right) }
+        x_{\rm n} &= \sqrt{ \frac{2 \epsilon_{\rm si} \cdot V_0}{q (N_{\rm A} + N_{\rm D})} \cdot \left( \frac{N_{\rm A}}{N_{\rm D}} \right) } \\[2ex]
+        x_{\rm p} &= \sqrt{ \frac{2 \epsilon_{\rm si} \cdot V_0}{q (N_{\rm A} + N_{\rm D})} \cdot \left( \frac{N_{\rm D}}{N_{\rm A}} \right) }
     \end{split}
 \end{equation*}
 $$
@@ -135,14 +135,18 @@ Where
 - $q$ is the magnitude of electron charge, $\rm C$
 
 $$
-W = |x_{\rm n}| + |x_{\rm p}| \\[2ex]
-W = \sqrt{ \frac{2 \epsilon_{\rm si} \cdot V_0}{q} \cdot \left( \frac{1}{N_{\rm A}} + \frac{1}{N_{\rm D}} \right)}
+\begin{equation*}
+    \begin{split}
+        W = |x_{\rm n}| + |x_{\rm p}| \\[2ex]
+        W = \sqrt{ \frac{2 \epsilon_{\rm si} \cdot V_0}{q} \cdot \left( \frac{1}{N_{\rm A}} + \frac{1}{N_{\rm D}} \right)}
+    \end{split}
+\end{equation*}
 $$
 
 ### Depletion Region Charge $Q$
 
 $$
-Q = A \cdot \sqrt{ 2 \epsilon_{\rm s} \cdot q \left( \frac{N_{\rm A} \cdot N_{\rm D}}{N_{\rm A} + N_{\rm D}} \right) \cdot V_0 }
+Q = A \cdot \sqrt{ 2 \epsilon_{\rm s} \cdot q \cdot V_0 \left( \frac{N_{\rm A} \cdot N_{\rm D}}{N_{\rm A} + N_{\rm D}} \right) }
 $$
 
 ---

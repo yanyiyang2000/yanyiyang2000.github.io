@@ -4,6 +4,9 @@
 - name: About
   link: /about.html
 
+- name: Semiconductor
+  link: /semiconductor
+
 - name: PN Junction
   link: /pn-junction.html
 
@@ -12,6 +15,3 @@
 
 - name: ALOHA
   link: /aloha.html
-
-- name: Semiconductor
-  link: /semiconductor

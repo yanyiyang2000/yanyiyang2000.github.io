@@ -39,16 +39,25 @@ Where
 
 ---
 
-## Intrinsic Carrier Concentration $n_{\rm i}$
+## Carrier Concentration of Intrinsic Material
 
 $$
 n_{\rm i} = \sqrt{N_{\rm c} N_{\rm v}} \cdot e^{-\frac{E_{\rm g}}{2 k T}}
 $$
 
 Where
+- $n_{\rm i}$ is the intrinsic carrier concentration, $\rm cm^{-3}$
 - $E_{\rm g}$ is the band gap energy, $\rm eV$
 
-## Carrier Concentration $n$ and $p$
+$$
+n = p = n_{\rm i}
+$$
+
+Where
+- $n$ is the concentration of electrons, $\rm cm^{-3}$
+- $p$ is the concentration of holes, $\rm cm^{-3}$
+
+## Carrier Concentration of Extrinsic Material
 
 $$
 \begin{equation*}
@@ -60,8 +69,6 @@ $$
 $$
 
 Where
-- $n$ is the concentration of electrons, $\rm cm^{-3}$
-- $p$ is the concentration of holes, $\rm cm^{-3}$
 - $E_{\rm c}$ is the conduction band energy, $\rm eV$
 - $E_{\rm v}$ is the valence band energy, $\rm eV$
 
