@@ -113,19 +113,36 @@ $$
 
 Where
 - $V_{\rm T}$ is the thermal voltage, $\rm K$
-- $N_{\rm A}$ is the hole concentration of the *p*-type material, $\rm m^{-3}$
-- $N_{\rm D}$ is the electron concentration of the *n*-type material, $\rm m^{-3}$
+- $N_{\rm A}$ is the hole (acceptor) concentration of the *p*-type material, $\rm m^{-3}$
+- $N_{\rm D}$ is the electron (donor) concentration of the *n*-type material, $\rm m^{-3}$
 - $n_{\rm i}$ is the intrinsic carrier concentration, $\rm m^{-3}$
 
 ### Depletion Region Width $W$
 
 $$
-W = \sqrt{ \frac{2 \epsilon_{\rm s}}{q} \cdot \left( \frac{1}{N_{\rm A}} + \frac{1}{N_{\rm D}} \right) \cdot V_0 }
+\begin{equation*}
+    \begin{split}
+        x_{\rm n} &= \sqrt{ \frac{2 \epsilon_{\rm si} \cdot V_0}{q (N_{\rm A} + N_{\rm D})} \left( \frac{N_{\rm A}}{N_{\rm D}} \right) } \\[2ex]
+        x_{\rm p} &= \sqrt{ \frac{2 \epsilon_{\rm si} \cdot V_0}{q (N_{\rm A} + N_{\rm D})} \left( \frac{N_{\rm D}}{N_{\rm A}} \right) }
+    \end{split}
+\end{equation*}
 $$
 
 Where
-- $\epsilon_{\rm s}$ is the electrical permittivity of silicon, $\rm F/cm$
+- $x_{\rm n}$ is is the penetration of the space charge region into the *n*-type material
+- $x_{\rm p}$ is is the penetration of the space charge region into the *p*-type material
+- $\epsilon_{\rm si}$ is the electrical permittivity of silicon, $\rm F/cm$
 - $q$ is the magnitude of electron charge, $\rm C$
+
+$$
+W = |x_{\rm n}| + |x_{\rm p}|
+$$
+
+Or
+
+$$
+W = \sqrt{ \frac{2 \epsilon_{\rm si} \cdot V_0}{q} \cdot \left( \frac{1}{N_{\rm A}} + \frac{1}{N_{\rm D}} \right)}
+$$
 
 ### Depletion Region Charge $Q$
 
