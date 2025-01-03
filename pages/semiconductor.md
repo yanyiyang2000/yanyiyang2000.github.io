@@ -42,7 +42,7 @@ Where
 ## Intrinsic Carrier Concentration $n_{\rm i}$
 
 $$
-n_{\rm i} = \sqrt{N_{\rm c} N_{\rm v}} e^{-\frac{E_{\rm g}}{2 k T}}
+n_{\rm i} = \sqrt{N_{\rm c} N_{\rm v}} \cdot e^{-\frac{E_{\rm g}}{2 k T}}
 $$
 
 Where
@@ -53,8 +53,8 @@ Where
 $$
 \begin{equation*}
     \begin{split}
-        n &= N_{\rm c} e^{-\frac{E_{\rm c} - E_{\rm F}}{k T}} \\[2ex]
-        p &= N_{\rm v} e^{-\frac{E_{\rm F} - E_{\rm v}}{k T}}
+        n &= N_{\rm c} \cdot e^{-\frac{E_{\rm c} - E_{\rm F}}{k T}} \\[2ex]
+        p &= N_{\rm v} \cdot e^{-\frac{E_{\rm F} - E_{\rm v}}{k T}}
     \end{split}
 \end{equation*}
 $$
@@ -70,29 +70,31 @@ Where
 ## Fermi Level of Intrinsic Semiconductor $E_{\rm i}$
 
 $$
-E_{\rm i} = \frac{1}{2} (E_{\rm c} + E_{\rm v}) + \frac{3}{4} k T \ln \left( \frac{m_{\rm p}^*}{m_{\rm n}^*} \right)
+E_{\rm i} = \frac{1}{2} (E_{\rm c} + E_{\rm v}) + \frac{3}{4} k \cdot T \cdot \ln \left( \frac{m_{\rm p}^*}{m_{\rm n}^*} \right)
 $$
 
 ## Fermi Level of Extrinsic Semiconductors $E_{\rm F}$
 
-For n-type semiconductor
+For *n*-type material
 
 $$
-E_{\rm F} - E_{\rm i} = k T \ln \left( \frac{n}{n_{\rm i}} \right) \approx k T \ln \left( \frac{N_{\rm D}}{n_{\rm i}} \right)
+\begin{equation*}
+    \begin{split}
+        E_{\rm F} - E_{\rm i} = k \cdot T \cdot \ln \left( \frac{n}{n_{\rm i}} \right) \approx k \cdot T \cdot \ln \left( \frac{N_{\rm D}}{n_{\rm i}} \right) \\[2ex]
+        E_{\rm F} - E_{\rm c} = k \cdot T \cdot \ln \left( \frac{N_{\rm D}}{N_{\rm c}} \right)
+    \end{split}
+\end{equation*}
 $$
 
-$$
-E_{\rm F} - E_{\rm c} = k T \ln \left( \frac{N_{\rm D}}{N_{\rm c}} \right)
-$$
-
-For p-type semiconductor
+For *p*-type material
 
 $$
-E_{\rm i} - E_{\rm F} = k T \ln \left( \frac{p}{n_{\rm i}} \right) \approx k T \ln \left( \frac{N_{\rm A}}{n_{\rm i}} \right)
-$$
-
-$$
-E_{\rm v} - E_{\rm F} = k T \ln \left( \frac{N_{\rm A}}{N_{\rm v}} \right)
+\begin{equation*}
+    \begin{split}
+        E_{\rm i} - E_{\rm F} = k \cdot T \cdot \ln \left( \frac{p}{n_{\rm i}} \right) \approx k \cdot T \cdot \ln \left( \frac{N_{\rm A}}{n_{\rm i}} \right) \\[2ex]
+        E_{\rm v} - E_{\rm F} = k \cdot T \cdot \ln \left( \frac{N_{\rm A}}{N_{\rm v}} \right)
+    \end{split}
+\end{equation*}
 $$
 
 Where
