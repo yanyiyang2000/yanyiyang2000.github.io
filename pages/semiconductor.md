@@ -15,7 +15,7 @@ Where
 - $k$ is the Boltzmann constant, $8.63 \times 10^{-5}\ \rm eV/K$
 - $T$ is the temperature, $\rm K$
 
-Note that $f(E) = 0.5$ when $E = E_{\rm F}$ regradless the value of $T$. This implies that 50\% of states are occupied when $E = E_{\rm F}$.
+Note that $f(E) = 0.5$ when $E = E_{\rm F}$ regradless the value of $T$. This implies that $50\%$ of states are occupied when $E = E_{\rm F}$.
 
 ---
 

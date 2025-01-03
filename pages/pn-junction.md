@@ -135,12 +135,7 @@ Where
 - $q$ is the magnitude of electron charge, $\rm C$
 
 $$
-W = |x_{\rm n}| + |x_{\rm p}|
-$$
-
-Or
-
-$$
+W = |x_{\rm n}| + |x_{\rm p}| \\[2ex]
 W = \sqrt{ \frac{2 \epsilon_{\rm si} \cdot V_0}{q} \cdot \left( \frac{1}{N_{\rm A}} + \frac{1}{N_{\rm D}} \right)}
 $$
 
